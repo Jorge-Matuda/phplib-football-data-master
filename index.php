@@ -1,6 +1,5 @@
 <?php
-include 'FootballData.php';
-?>
+include 'FootballData.php'; ?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -14,9 +13,9 @@ include 'FootballData.php';
 
 <body>
 <div data-bs-theme="dark" class="text-body bg-body">
-<?php // Create instance of API class  
-    $api = new FootballData(); 
-?>
+<?php // Create instance of API class
+// Create instance of API class
+?>$api = new FootballData(); ?>
 
 <div class="site-wrap">
     <div class="site-mobile-menu site-navbar-target">
@@ -118,7 +117,8 @@ include 'FootballData.php';
                     <tbody>
                     <?php
                     $now = new DateTime();
-                    $end = new DateTime(); $end->add(new DateInterval('P3D'));
+                    $end = new DateTime();
+                    $end->add(new DateInterval('P3D'));
                     $response = $api->findMatchesForDateRange($now->format('Y-m-d'), $end->format('Y-m-d'));
                     ?>
                     <?php foreach ($response->matches as $match) { ?>
@@ -147,17 +147,18 @@ include 'FootballData.php';
                             <th scope="col">Points</th>
                         </tr>
                     </thead>
-                            <?php foreach ($api->findStandingsByCompetition("PL")->standings as $standing) { 
-                                    if ($standing->type == 'TOTAL') { 
-                                        foreach ($standing->table as $standingRow) {
-                            ?>
+                            <?php foreach ($api->findStandingsByCompetition("PL")->standings as $standing) {
+                                if ($standing->type == 'TOTAL') {
+                                    foreach ($standing->table as $standingRow) { ?>
                             <tr>
                                 <td><?php echo $standingRow->position; ?></td>
                                 <td><?php echo $standingRow->team->name; ?></td>
                                 <td><?php echo $standingRow->goalDifference; ?></td>
                                 <td><?php echo $standingRow->points; ?></td>
                             </tr>
-                            <?php }}} ?>
+                            <?php }
+                                }
+                            } ?>
                             <tr>
                             </tr>
                         </table>
@@ -177,17 +178,18 @@ include 'FootballData.php';
                             <th scope="col">Points</th>
                         </tr>
                     </thead>
-                    <?php foreach ($api->findStandingsByCompetition("BSA")->standings as $standing) { 
-                            if ($standing->type == 'TOTAL') { 
-                                foreach ($standing->table as $standingRow) {
-                    ?>
+                    <?php foreach ($api->findStandingsByCompetition("BSA")->standings as $standing) {
+                        if ($standing->type == 'TOTAL') {
+                            foreach ($standing->table as $standingRow) { ?>
                     <tr>
                         <td><?php echo $standingRow->position; ?></td>
                         <td><?php echo $standingRow->team->name; ?></td>
                         <td><?php echo $standingRow->goalDifference; ?></td>
                         <td><?php echo $standingRow->points; ?></td>
                     </tr>
-                    <?php }}} ?>
+                    <?php }
+                        }
+                    } ?>
                     <tr>
                     </tr>
                 </table>
@@ -209,17 +211,18 @@ include 'FootballData.php';
                             <th scope="col">Points</th>
                         </tr>
                     </thead>
-                    <?php foreach ($api->findStandingsByCompetition("PPL")->standings as $standing) { 
-                            if ($standing->type == 'TOTAL') { 
-                                foreach ($standing->table as $standingRow) {
-                    ?>
+                    <?php foreach ($api->findStandingsByCompetition("PPL")->standings as $standing) {
+                        if ($standing->type == 'TOTAL') {
+                            foreach ($standing->table as $standingRow) { ?>
                     <tr>
                         <td><?php echo $standingRow->position; ?></td>
                         <td><?php echo $standingRow->team->name; ?></td>
                         <td><?php echo $standingRow->goalDifference; ?></td>
                         <td><?php echo $standingRow->points; ?></td>
                     </tr>
-                    <?php }}} ?>
+                    <?php }
+                        }
+                    } ?>
                     <tr>
                     </tr>
                 </table>
@@ -242,17 +245,18 @@ include 'FootballData.php';
                         <th scope="col">Points</th>
                     </tr>
                 </thead>
-                        <?php foreach ($api->findStandingsByCompetition("DED")->standings as $standing) { 
-                                if ($standing->type == 'TOTAL') { 
-                                    foreach ($standing->table as $standingRow) {
-                        ?>
+                        <?php foreach ($api->findStandingsByCompetition("DED")->standings as $standing) {
+                            if ($standing->type == 'TOTAL') {
+                                foreach ($standing->table as $standingRow) { ?>
                         <tr>
                             <td><?php echo $standingRow->position; ?></td>
                             <td><?php echo $standingRow->team->name; ?></td>
                             <td><?php echo $standingRow->goalDifference; ?></td>
                             <td><?php echo $standingRow->points; ?></td>
                         </tr>
-                        <?php }}} ?>
+                        <?php }
+                            }
+                        } ?>
                         <tr>
                         </tr>
                     </table>
@@ -275,17 +279,18 @@ include 'FootballData.php';
                             <th scope="col">Points</th>
                         </tr>
                     </thead>
-                    <?php foreach ($api->findStandingsByCompetition("BL1")->standings as $standing) { 
-                            if ($standing->type == 'TOTAL') { 
-                                foreach ($standing->table as $standingRow) {
-                    ?>
+                    <?php foreach ($api->findStandingsByCompetition("BL1")->standings as $standing) {
+                        if ($standing->type == 'TOTAL') {
+                            foreach ($standing->table as $standingRow) { ?>
                     <tr>
                         <td><?php echo $standingRow->position; ?></td>
                         <td><?php echo $standingRow->team->name; ?></td>
                         <td><?php echo $standingRow->goalDifference; ?></td>
                         <td><?php echo $standingRow->points; ?></td>
                     </tr>
-                    <?php }}} ?>
+                    <?php }
+                        }
+                    } ?>
                     <tr>
                     </tr>
                 </table>
@@ -308,17 +313,18 @@ include 'FootballData.php';
                             <th scope="col">Points</th>
                         </tr>
                     </thead>
-                    <?php foreach ($api->findStandingsByCompetition("FL1")->standings as $standing) { 
-                            if ($standing->type == 'TOTAL') { 
-                                foreach ($standing->table as $standingRow) {
-                    ?>
+                    <?php foreach ($api->findStandingsByCompetition("FL1")->standings as $standing) {
+                        if ($standing->type == 'TOTAL') {
+                            foreach ($standing->table as $standingRow) { ?>
                     <tr>
                         <td><?php echo $standingRow->position; ?></td>
                         <td><?php echo $standingRow->team->name; ?></td>
                         <td><?php echo $standingRow->goalDifference; ?></td>
                         <td><?php echo $standingRow->points; ?></td>
                     </tr>
-                    <?php }}} ?>
+                    <?php }
+                        }
+                    } ?>
                     <tr>
                     </tr>
                 </table>
@@ -341,17 +347,18 @@ include 'FootballData.php';
                             <th scope="col">Points</th>
                         </tr>
                     </thead>
-                    <?php foreach ($api->findStandingsByCompetition("SA")->standings as $standing) { 
-                            if ($standing->type == 'TOTAL') { 
-                                foreach ($standing->table as $standingRow) {
-                    ?>
+                    <?php foreach ($api->findStandingsByCompetition("SA")->standings as $standing) {
+                        if ($standing->type == 'TOTAL') {
+                            foreach ($standing->table as $standingRow) { ?>
                     <tr>
                         <td><?php echo $standingRow->position; ?></td>
                         <td><?php echo $standingRow->team->name; ?></td>
                         <td><?php echo $standingRow->goalDifference; ?></td>
                         <td><?php echo $standingRow->points; ?></td>
                     </tr>
-                    <?php }}} ?>
+                    <?php }
+                        }
+                    } ?>
                     <tr>
                     </tr>
                 </table>
@@ -374,17 +381,18 @@ include 'FootballData.php';
                             <th scope="col">Points</th>
                         </tr>
                     </thead>
-                    <?php foreach ($api->findStandingsByCompetition("PD")->standings as $standing) { 
-                            if ($standing->type == 'TOTAL') { 
-                                foreach ($standing->table as $standingRow) {
-                    ?>
+                    <?php foreach ($api->findStandingsByCompetition("PD")->standings as $standing) {
+                        if ($standing->type == 'TOTAL') {
+                            foreach ($standing->table as $standingRow) { ?>
                     <tr>
                         <td><?php echo $standingRow->position; ?></td>
                         <td><?php echo $standingRow->team->name; ?></td>
                         <td><?php echo $standingRow->goalDifference; ?></td>
                         <td><?php echo $standingRow->points; ?></td>
                     </tr>
-                    <?php }}} ?>
+                    <?php }
+                        }
+                    } ?>
                     <tr>
                     </tr>
                 </table>
@@ -407,17 +415,18 @@ include 'FootballData.php';
                             <th scope="col">Points</th>
                         </tr>
                     </thead>
-                    <?php foreach ($api->findStandingsByCompetition("ELC")->standings as $standing) { 
-                            if ($standing->type == 'TOTAL') { 
-                                foreach ($standing->table as $standingRow) {
-                    ?>
+                    <?php foreach ($api->findStandingsByCompetition("ELC")->standings as $standing) {
+                        if ($standing->type == 'TOTAL') {
+                            foreach ($standing->table as $standingRow) { ?>
                     <tr>
                         <td><?php echo $standingRow->position; ?></td>
                         <td><?php echo $standingRow->team->name; ?></td>
                         <td><?php echo $standingRow->goalDifference; ?></td>
                         <td><?php echo $standingRow->points; ?></td>
                     </tr>
-                    <?php }}} ?>
+                    <?php }
+                        }
+                    } ?>
                     <tr>
                     </tr>
                 </table>
@@ -440,17 +449,18 @@ include 'FootballData.php';
                             <th scope="col">Points</th>
                         </tr>
                     </thead>
-                    <?php foreach ($api->findStandingsByCompetition("CLI")->standings as $standing) { 
-                            if ($standing->type == 'TOTAL') { 
-                                foreach ($standing->table as $standingRow) {
-                    ?>
+                    <?php foreach ($api->findStandingsByCompetition("CLI")->standings as $standing) {
+                        if ($standing->type == 'TOTAL') {
+                            foreach ($standing->table as $standingRow) { ?>
                     <tr>
                         <td><?php echo $standingRow->position; ?></td>
                         <td><?php echo $standingRow->team->name; ?></td>
                         <td><?php echo $standingRow->goalDifference; ?></td>
                         <td><?php echo $standingRow->points; ?></td>
                     </tr>
-                    <?php }}} ?>
+                    <?php }
+                        }
+                    } ?>
                     <tr>
                     </tr>
                 </table>
