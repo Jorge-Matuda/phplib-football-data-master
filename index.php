@@ -138,8 +138,8 @@
                      <thead>
                         <tr>
                            <th scope="col">Position</th>
-                           <th scope="col">TeamName</th>
-                           <th scope="col">GoalDifference</th>
+                           <th scope="col">Team Name</th>
+                           <th scope="col">Goal Difference</th>
                            <th scope="col">Points</th>
                         </tr>
                      </thead>
@@ -168,8 +168,8 @@
                      <thead>
                         <tr>
                            <th scope="col">Position</th>
-                           <th scope="col">TeamName</th>
-                           <th scope="col">GoalDifference</th>
+                           <th scope="col">Team Name</th>
+                           <th scope="col">Goal Difference</th>
                            <th scope="col">Points</th>
                         </tr>
                      </thead>
@@ -200,8 +200,8 @@
                      <thead>
                         <tr>
                            <th scope="col">Position</th>
-                           <th scope="col">TeamName</th>
-                           <th scope="col">GoalDifference</th>
+                           <th scope="col">Team Name</th>
+                           <th scope="col">Goal Difference</th>
                            <th scope="col">Points</th>
                         </tr>
                      </thead>
@@ -232,8 +232,8 @@
                      <thead>
                         <tr>
                            <th scope="col">Position</th>
-                           <th scope="col">TeamName</th>
-                           <th scope="col">GoalDifference</th>
+                           <th scope="col">Team Name</th>
+                           <th scope="col">Goal Difference</th>
                            <th scope="col">Points</th>
                         </tr>
                      </thead>
@@ -264,7 +264,7 @@
                      <thead>
                         <tr>
                            <th scope="col">Position</th>
-                           <th scope="col">TeamName</th>
+                           <th scope="col">Team Name</th>
                            <th scope="col">GoalDifference</th>
                            <th scope="col">Points</th>
                         </tr>
@@ -296,8 +296,8 @@
                      <thead>
                         <tr>
                            <th scope="col">Position</th>
-                           <th scope="col">TeamName</th>
-                           <th scope="col">GoalDifference</th>
+                           <th scope="col">Team Name</th>
+                           <th scope="col">Goal Difference</th>
                            <th scope="col">Points</th>
                         </tr>
                      </thead>
@@ -328,8 +328,8 @@
                      <thead>
                         <tr>
                            <th scope="col">Position</th>
-                           <th scope="col">TeamName</th>
-                           <th scope="col">GoalDifference</th>
+                           <th scope="col">Team Name</th>
+                           <th scope="col">Goal Difference</th>
                            <th scope="col">Points</th>
                         </tr>
                      </thead>
@@ -360,8 +360,8 @@
                      <thead>
                         <tr>
                            <th scope="col">Position</th>
-                           <th scope="col">TeamName</th>
-                           <th scope="col">GoalDifference</th>
+                           <th scope="col">Team Name</th>
+                           <th scope="col">Goal Difference</th>
                            <th scope="col">Points</th>
                         </tr>
                      </thead>
@@ -392,8 +392,8 @@
                      <thead>
                         <tr>
                            <th scope="col">Position</th>
-                           <th scope="col">TeamName</th>
-                           <th scope="col">GoalDifference</th>
+                           <th scope="col">Team Name</th>
+                           <th scope="col">Goal Difference</th>
                            <th scope="col">Points</th>
                         </tr>
                      </thead>
@@ -424,8 +424,8 @@
                      <thead>
                         <tr>
                            <th scope="col">Position</th>
-                           <th scope="col">TeamName</th>
-                           <th scope="col">GoalDifference</th>
+                           <th scope="col">Team Name</th>
+                           <th scope="col">Goal Difference</th>
                            <th scope="col">Points</th>
                         </tr>
                      </thead>
